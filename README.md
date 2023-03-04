@@ -91,13 +91,17 @@
   - cd Downloads && wget https://updates.jenkins.io/download/war/2.393/jenkins.war
   - nohup java -jar jenkins.war &
   - Visit using URL http://localhost:8080
+  - Username: y_ijohn
+  - Password: Divya@1234
+  - Full Name: Irudaya Raj John Y
+  - Email: y_ijohn@yahoo.com
 
 ### Configuring SonarQube
 ```
 docker run -d -p 9000:9000 sonarqube:lts
   - Visit using URL http://localhost:9000
   Username: admin
-  Password: admin
+  Password: Divya@2324
 ```
 
 ### Nexus
