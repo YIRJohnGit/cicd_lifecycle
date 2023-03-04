@@ -1,7 +1,31 @@
 # Setting Up CICD Life Cycle
 
 - You Tube Tutorials: https://youtu.be/adG0vq5boL8
-- 
+- GiHub, CICD Java Gradle Application, https://github.com/DeekshithSN/CICD_Java_gradle_application
+- Setting Up Instructions https://github.com/DeekshithSN/CICD_Java_gradle_application/wiki
+  - Setting Up Sonarqube with Jenkins
+  - Creating Docker Hosted Repository in Nexus and Pushing docker image through Jenkins
+  - Creating Helm hosted repository in Nexus and Pushing the helm chart
+  - Configuring mail Server in Jenkins
+  - Configuring PR based trigger in Jenkins
+  - How to pull the images from private repository ( nexus ) to Kubernetes Kubeadm cluster
+  - Connecting Jenkins with Kubernetes Cluster
+- Integrating Sonor Qube - https://github.com/DeekshithSN/CICD_Java_gradle_application/wiki/Integrating-Sonarqube-with-Jenkins
+- Installation Scripts - https://github.com/DeekshithSN/cheatsheet/blob/master/installtion_guide_ubuntu.md
+ - Java
+ - Git
+ - Jenkins
+ - Maven
+ - Docker
+ - SonarQube (Docker SonarQUBE)
+ - JFROG Artifactory installation in ubuntu 16.04 using docker container
+ - Ansible Installation
+ - kubernetes installation
+ - Nexus Installation
+ - Helm Installation
+ - installing kubeadm on GCP machines
+- Datree - https://hub.datree.io/
+- Jenkins Pipeline Syntax - https://www.jenkins.io/doc/book/pipeline/syntax/
 
 ## List of Tools required
 
@@ -68,4 +92,6 @@
 ### Configuring Jenkins
 
 ### Configuring SonarQube
-
+```
+docker run -d -p 9000:9000 sonarqube:lts
+```
