@@ -79,9 +79,6 @@
 
 ## Setting Up Machines
 - Jenkins (Ubuntu with 20GB) 
-  - Update the Jenkisns to Latest by visiting the Jenkins Website https://updates.jenkins.io/download/war/
-  - cd Downloads && wget https://updates.jenkins.io/download/war/2.393/jenkins.war
-  - nohup java -jar jenkins.war &
 - Nexus
 - SonarQube
 - Kubernetes Clusters (2 Machines)
@@ -90,8 +87,18 @@
 
 
 ### Configuring Jenkins
+  - Update the Jenkisns to Latest by visiting the Jenkins Website https://updates.jenkins.io/download/war/
+  - cd Downloads && wget https://updates.jenkins.io/download/war/2.393/jenkins.war
+  - nohup java -jar jenkins.war &
+  - Visit using URL http://localhost:8080
 
 ### Configuring SonarQube
 ```
 docker run -d -p 9000:9000 sonarqube:lts
+  - Visit using URL http://localhost:9000
+  Username: admin
+  Password: admin
 ```
+
+### Nexus
+  - Visit using URL http://localhost:8081
