@@ -55,6 +55,9 @@
 
 ## Setting Up Machines
 - Jenkins (Ubuntu with 20GB) 
+  - Update the Jenkisns to Latest by visiting the Jenkins Website https://updates.jenkins.io/download/war/
+  - cd Downloads && wget https://updates.jenkins.io/download/war/2.393/jenkins.war
+  - nohup java -jar jenkins.war &
 - Nexus
 - SonarQube
 - Kubernetes Clusters (2 Machines)
