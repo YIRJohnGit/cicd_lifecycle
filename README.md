@@ -113,7 +113,7 @@ docker run -d -p 9000:9000 sonarqube:lts
 
 ### Setting up Kubernetes
 
-### Setting up Helm
+### Setting up Helm on jenkins
 #### - Installation
 ```
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
@@ -126,4 +126,10 @@ which helm ( to see which folder its installed )
 rm -rf /usr/local/bin/helm
 ```
 
-### Setting up Datree.io
+### Setting up Datree.io on jenkins
+helm plugin install https://github.com/datreeio/helm-datree
+- https://github.com/datreeio/helm-datree
+
+<hr>
+
+## Application Setup
