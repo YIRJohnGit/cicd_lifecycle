@@ -1,5 +1,8 @@
 # Setting Up CICD Life Cycle
 
+- You Tube Tutorials: https://youtu.be/adG0vq5boL8
+- 
+
 ## List of Tools required
 
 ### Git & Github:
@@ -46,9 +49,20 @@
   - Prevent Kubernetes misconfiguration from reaching production 
   - In CICD we are using datree helm plugin which helps us in identifying misconfiguration in helm charts
 
-
-
-
 ## Process Flow
 ![YIR-CICD-Jenkins-Pipeline-V01](https://user-images.githubusercontent.com/111234771/222896536-6ec1de57-b8aa-4673-bb55-2a54e170d56b.jpg)
+
+
+## Setting Up Machines
+- Jenkins (Ubuntu with 20GB) 
+- Nexus
+- SonarQube
+- Kubernetes Clusters (2 Machines)
+  - Master
+  - Worker Node
+
+
+### Configuring Jenkins
+
+### Configuring SonarQube
 
