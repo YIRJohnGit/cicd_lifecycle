@@ -49,3 +49,6 @@
 
 
 
+## Process Flow
+![YIR-CICD-Jenkins-Pipeline-V01](https://user-images.githubusercontent.com/111234771/222896536-6ec1de57-b8aa-4673-bb55-2a54e170d56b.jpg)
+
