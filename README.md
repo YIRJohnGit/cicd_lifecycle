@@ -99,14 +99,31 @@
 ### Configuring SonarQube
 ```
 docker run -d -p 9000:9000 sonarqube:lts
-  - Visit using URL http://localhost:9000
-  Username: admin
-  Password: Divya@1234
-  Email: y_ijohn@yahoo.com
 ```
+- Visit using URL http://localhost:9000
+  - Username: admin
+  - Password: Divya@1234
+  - Email: y_ijohn@yahoo.com
 
 ### Nexus
-  -   Visit using URL http://localhost:8081
-  -   Username: admin
-  -   Password: Divya@1234
-  -   Email: y_ijohn@yahoo.com
+- Visit using URL http://localhost:8081
+  - Username: admin
+  - Password: Divya@1234
+  - Email: y_ijohn@yahoo.com
+
+### Setting up Kubernetes
+
+### Setting up Helm
+#### - Installation
+```
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+```
+#### Uninstall
+```
+which helm ( to see which folder its installed )
+rm -rf /usr/local/bin/helm
+```
+
+### Setting up Datree.io
