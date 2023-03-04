@@ -106,4 +106,7 @@ docker run -d -p 9000:9000 sonarqube:lts
 ```
 
 ### Nexus
-  - Visit using URL http://localhost:8081
+  -   Visit using URL http://localhost:8081
+  -   Username: admin
+  -   Password: Divya@1234
+  -   Email: y_ijohn@yahoo.com
