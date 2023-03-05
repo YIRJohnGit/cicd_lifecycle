@@ -105,6 +105,7 @@ sudo usermod -a -G docker jenkins
 ### Configuring SonarQube
 ```
 docker run -d -p 9000:9000 sonarqube:lts
+docker run -itd --restart=always -p 9000:9000 sonarqube:lts # Adding Policy to the docker container
 ```
 - Visit using URL http://localhost:9000
   - Username: admin
