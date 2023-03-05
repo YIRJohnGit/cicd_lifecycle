@@ -96,6 +96,17 @@
   - Full Name: Irudaya Raj John Y
   - Email: y_ijohn@yahoo.com
 
+#### Downgrading Jenkns to 2.303.2
+```
+sudo systemctl stop jenkins
+wget http://updates.jenkins-ci.org/download/war/2.303.2/jenkins.war
+sudo mv jenkins.war /usr/share/jenkins/
+sudo chown jenkins:jenkins /usr/share/jenkins/jenkins.war
+sudo systemctl start jenkins
+sudo cat /var/lib/jenkins/config.xml | grep -i "version"
+
+```
+
 #### Setting Up Docker and Jenkins Permission
 - The user jenkins needs to be added to the group docker
 ```
