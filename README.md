@@ -134,13 +134,18 @@ helm plugin install https://github.com/datreeio/helm-datree
 
 ## Application Setup
 
-### Adding Plugins
+### Adding Plugins for SonarQube
 - SonarQube Scanner
 - Gerrit Trigger
 - Sonar Gerrit
 - SonarQube Generic Coverage
 - Quality Gates
 - Sonar Quality Gates
+
+### Adding Plugins for Docker
+- Docker
+- Docker Pipeline
+- docker-build-step
 
 ### Adding SonarQube Configuration
 #### Generating Token in Sonar Qube
