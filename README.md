@@ -119,7 +119,17 @@ sudo userdel jenkins
 sudo groupdel jenkins
 
 ```
-
+#### Install Jenkins with Specific Version
+```
+sudo apt update
+sudo apt install -y openjdk-8-jdk
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+sudo apt update
+sudo apt install -y jenkins=2.89.4
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+```
 #### Setting Up Docker and Jenkins Permission
 - The user jenkins needs to be added to the group docker
 ```
