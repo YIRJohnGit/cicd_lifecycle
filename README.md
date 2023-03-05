@@ -109,7 +109,15 @@ sudo cat /var/lib/jenkins/config.xml | grep -i "version"
 #### Uninstalling Jenkins
 ```
 sudo apt-get remove jenkins
+sudo apt-get -y autoremove
+
 sudo rm -rf /var/lib/jenkins
+sudo rm -rf /var/cache/jenkins
+sudo rm -rf /var/log/jenkins
+
+sudo userdel jenkins
+sudo groupdel jenkins
+
 ```
 
 #### Setting Up Docker and Jenkins Permission
