@@ -104,7 +104,12 @@ sudo mv jenkins.war /usr/share/jenkins/
 sudo chown jenkins:jenkins /usr/share/jenkins/jenkins.war
 sudo systemctl start jenkins
 sudo cat /var/lib/jenkins/config.xml | grep -i "version"
+```
 
+#### Uninstalling Jenkins
+```
+sudo apt-get remove jenkins
+sudo rm -rf /var/lib/jenkins
 ```
 
 #### Setting Up Docker and Jenkins Permission
