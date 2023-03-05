@@ -130,6 +130,10 @@ rm -rf /usr/local/bin/helm
 helm plugin install https://github.com/datreeio/helm-datree
 - https://github.com/datreeio/helm-datree
 
+<hr>
+
+## Application Setup
+
 ### Adding Plugins
 - SonarQube Scanner
 - Gerrit Trigger
@@ -138,6 +142,17 @@ helm plugin install https://github.com/datreeio/helm-datree
 - Quality Gates
 - Sonar Quality Gates
 
-<hr>
-
-## Application Setup
+### Adding SonarQube Configuration
+#### Generating Token in Sonar Qube
+- Goto SonarQube
+  - Select Administration
+    - Select Security
+      - User, Select Tokens
+        - Provide the Valid Name and Copy the Token Secret Key 
+          - squ_6af6f7534ce43134a4c406feabe7141a49c9b4a5
+          
+#### Jenkins Credential Setting of Sonar Qube
+  - Go to Dashboard 
+   - Go to Manage Jenkins
+    - Go to Credentials, Select Global
+     - 
