@@ -96,6 +96,12 @@
   - Full Name: Irudaya Raj John Y
   - Email: y_ijohn@yahoo.com
 
+#### Setting Up Docker and Jenkins Permission
+- The user jenkins needs to be added to the group docker
+```
+sudo usermod -a -G docker jenkins
+```
+
 ### Configuring SonarQube
 ```
 docker run -d -p 9000:9000 sonarqube:lts
