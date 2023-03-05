@@ -126,9 +126,17 @@ which helm ( to see which folder its installed )
 rm -rf /usr/local/bin/helm
 ```
 
-### Setting up Datree.io on jenkins
+### Integrations of Datree.io on jenkins
 helm plugin install https://github.com/datreeio/helm-datree
 - https://github.com/datreeio/helm-datree
+
+### Adding Plugins
+- SonarQube Scanner
+- Gerrit Trigger
+- Sonar Gerrit
+- SonarQube Generic Coverage
+- Quality Gates
+- Sonar Quality Gates
 
 <hr>
 
