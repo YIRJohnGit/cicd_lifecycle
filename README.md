@@ -150,7 +150,7 @@ docker run -itd --restart=always -p 9000:9000 sonarqube:lts # Adding Policy to t
   - Email: y_ijohn@yahoo.com
 
 #### Option 2 - With Dat Volume attached to SonarQube
-- Create a file and add the below content 
+- Create a file ***sonarqube_setup.sh*** and add the below content 
 ```
 #!/bin/bash
 
