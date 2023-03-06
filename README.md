@@ -288,3 +288,16 @@ helm plugin install https://github.com/datreeio/helm-datree
       - Select Git form the Dropdown List Under SCM
       - 
   
+
+#### Setting Up GitHub Personal Access Token
+  - Go to User Profile, Select Settings
+    - Go to Developer Settings
+      - Select Personal Access Token
+        - Select Tokens (Classic), Click on Generate New Token
+          - Tick -  repo Full control of private repositories
+          - Tick - read:org Read org and team membership, read org projects
+          - Tick -  user:email Access user email addresses (read-only)
+          - Generte and Copy the token 
+          ```
+          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
+          ```
