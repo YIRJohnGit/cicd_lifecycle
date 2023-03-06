@@ -282,4 +282,9 @@ helm plugin install https://github.com/datreeio/helm-datree
   ![image](https://user-images.githubusercontent.com/111234771/222962821-65a63110-1b1b-45c5-b852-b46bbdd06347.png)
 
   #### Setting up Commit Based Job in Jenkins
-  - 
+  - Go to New Item, provide Proper Name, Select Pipeline Job
+    - Tick Mark on GitHub hook trigger for GITScm polling Under Build Triggers Section
+    - Go to Pipeline Section, Select Pipeline Script from SCM
+      - Select Git form the Dropdown List Under SCM
+      - 
+  
