@@ -137,6 +137,37 @@ sudo systemctl enable jenkins
 ```
 sudo usermod -a -G docker jenkins
 ```
+#### Option 3 - Setting up Jenkins and SonarQube with Docker-Compose
+- Create a file docker-compose.yml
+```
+version: "3"
+services:
+  sonarqube:
+    image: sonarqube:lts
+    ports:
+      - 9000:9000
+    networks:
+      - mynetwork
+    environment:
+      - SONAR_FORCEAUTHENTICATION=false
+  jenkins:
+    build:
+      context: .
+    ports:
+      - 8080:8080
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
+```
+- Run the following command to run Docker Services in the file
+```
+Run `docker-compose up -d --build`
+```
+- you'll have access to:
+  - Jenkins at http://localhost:8080
+  - SonarQube at http://localhost:9000
+
 
 ### Configuring SonarQube
 #### Option 1 - SonarQube Minimum Setup 
