@@ -110,7 +110,7 @@ java -jar /usr/share/jenkins/jenkins.war --version
 
 #### Uninstalling Jenkins
 ```
-sudo apt-get remove jenkins
+sudo apt-get remove -y jenkins
 sudo apt-get -y autoremove
 
 sudo rm -rf /var/lib/jenkins
