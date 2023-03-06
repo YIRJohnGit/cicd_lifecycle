@@ -307,7 +307,9 @@ helm plugin install https://github.com/datreeio/helm-datree
   ```
   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
   ```
-
+  ```
+    https2 - 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
+  ```
   <hr>
   
 #### Setting Up GitHub SSH Token
@@ -318,4 +320,11 @@ helm plugin install https://github.com/datreeio/helm-datree
   cat ~/.ssh/id_ed25519.pub
   ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOf9dU+iztmqI0j6PgfTWL8ljVLELUCoVah4wpWBOaRl yir.john@simpragma.com
   ```
+  - Go to Settings
+    -  SSH and GPG Keys and the Pub key from the Machine
   
+  - Setup up Private Key in the Jenkins
+    - Go to Terminal, 
+      - cat ~/.ssh/id_ed25519
+  ![image](https://user-images.githubusercontent.com/111234771/223159399-09bfbb81-e438-450a-851e-b490ed348265.png)
+
