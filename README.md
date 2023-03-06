@@ -281,5 +281,5 @@ helm plugin install https://github.com/datreeio/helm-datree
   _View Result_
   ![image](https://user-images.githubusercontent.com/111234771/222962821-65a63110-1b1b-45c5-b852-b46bbdd06347.png)
 
-  #### Setting uUp Commit Based JOB in Jenkins
+  #### Setting up Commit Based Job in Jenkins
   - 
