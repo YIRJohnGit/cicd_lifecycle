@@ -311,6 +311,7 @@ helm plugin install https://github.com/datreeio/helm-datree
     https2 - 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
     https4 - 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
     https5 - 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
+  https7 - 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
   ```
   <hr>
   
