@@ -104,6 +104,8 @@ sudo mv jenkins.war /usr/share/jenkins/
 sudo chown jenkins:jenkins /usr/share/jenkins/jenkins.war
 sudo systemctl start jenkins
 sudo cat /var/lib/jenkins/config.xml | grep -i "version"
+java -jar /usr/share/jenkins/jenkins.war --version
+
 ```
 
 #### Uninstalling Jenkins
@@ -137,6 +139,7 @@ sudo usermod -a -G docker jenkins
 ```
 
 ### Configuring SonarQube
+#### Option 1 - SonarQube Minimum Setup 
 ```
 docker run -d -p 9000:9000 sonarqube:lts
 docker run -itd --restart=always -p 9000:9000 sonarqube:lts # Adding Policy to the docker container
@@ -145,6 +148,39 @@ docker run -itd --restart=always -p 9000:9000 sonarqube:lts # Adding Policy to t
   - Username: admin
   - Password: Divya@1234
   - Email: y_ijohn@yahoo.com
+
+#### Option 2 - With Dat Volume attached to SonarQube
+- Create a file and add the below content 
+```
+#!/bin/bash
+
+# Create a Docker volume for SonarQube data
+docker volume create sonarqube_data
+
+# Start SonarQube container with data volume
+docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 -v sonarqube_data:/opt/sonarqube/data sonarqube
+
+# Wait for SonarQube to start up
+echo "Waiting for SonarQube to start up..."
+until $(curl --output /dev/null --silent --head --fail http://localhost:9000/api/system/status); do
+    printf '.'
+    sleep 5
+done
+echo "SonarQube is up and running!"
+
+# Attach data volume to retain data and settings
+docker stop sonarqube
+docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 -v sonarqube_data:/opt/sonarqube/data sonarqube
+
+echo "SonarQube container is now running with data volume attached."
+
+```
+- Setting Up
+```
+chmod +x sonarqube_setup.sh
+./sonarqube_setup.sh
+
+```
 
 ### Nexus
 - Visit using URL http://localhost:8081
