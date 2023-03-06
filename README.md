@@ -299,5 +299,5 @@ helm plugin install https://github.com/datreeio/helm-datree
           - Tick -  user:email Access user email addresses (read-only)
           - Generte and Copy the token 
           ```
-          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
+          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
           ```
