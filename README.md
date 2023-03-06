@@ -289,7 +289,7 @@ helm plugin install https://github.com/datreeio/helm-datree
       - 
   
 
-#### Setting Up GitHub Personal Access Token
+#### Setting Up GitHub Personal Access Token with HTTPS - Private Repository
   - Go to User Profile, Select Settings
     - Go to Developer Settings
       - Select Personal Access Token
@@ -310,4 +310,12 @@ helm plugin install https://github.com/datreeio/helm-datree
 
   <hr>
   
+#### Setting Up GitHub SSH Token
+  ```
+  ssh-keygen -t ed25519 -C "yir.john@simpragma.com"
+  ```
+  ```
+  cat ~/.ssh/id_ed25519.pub
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOf9dU+iztmqI0j6PgfTWL8ljVLELUCoVah4wpWBOaRl yir.john@simpragma.com
+  ```
   
