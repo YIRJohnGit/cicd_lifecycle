@@ -137,6 +137,24 @@ sudo systemctl enable jenkins
 ```
 sudo usermod -a -G docker jenkins
 ```
+
+#### How to use Jenkins CLI
+```
+java -jar jenkins.war --httpPort=9090 # Start Java Application at spexific Port Number 9090
+```
+- Setting Up Security
+  - Go to Manage Jenkins
+    - Configure Global Security
+      - Tick - Enable Security
+- Go to cli - Syntax is  <Jenkins URL>/cli/
+  - http://local.cd.com/cli/
+    - Click on Jenkins-cli.jar from the page  (http://local.cd.com/jnlpJars/jenkins-cli.jar)
+    - mkdir ~/jenkins-cli
+    = mv jenkins-cli.jar  ~/jenkins-cli/
+    - cd ~/jenkins-cli
+    - java -jar jenkins-cli.jar -s http://local.cd.com/ -webSocket help
+    
+
 #### Option 3 - Setting up Jenkins and SonarQube with Docker-Compose
 - Create a file docker-compose.yml
 ```
