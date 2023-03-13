@@ -136,6 +136,9 @@ sudo systemctl enable jenkins
 - The user jenkins needs to be added to the group docker
 ```
 sudo usermod -a -G docker jenkins
+OR
+sudo usermod -a -G docker $USER
+reboot
 ```
 
 #### How to use Jenkins CLI
