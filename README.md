@@ -110,15 +110,21 @@ java -jar /usr/share/jenkins/jenkins.war --version
 
 #### Uninstalling Jenkins
 ```
-sudo apt-get remove -y jenkins
-sudo apt-get -y autoremove
+sudo systemctl stop jenkins
+sudo apt-get remove -y --auto-remove jenkins
 
 sudo rm -rf /var/lib/jenkins
+sudo rm -rf /etc/default/jenkins /etc/init.d/jenkins /etc/systemd/system/jenkins.service
+
 sudo rm -rf /var/cache/jenkins
 sudo rm -rf /var/log/jenkins
 
-sudo userdel jenkins
+sudo userdel -r jenkins # Delete User and Its Home Directory
 sudo groupdel jenkins
+
+sudo rm -rf /etc/apt/sources.list.d/jenkins.list # Remove the Jenkins repository from your package manager
+sudo apt-get update
+
 
 ```
 #### Install Jenkins with Specific Version
