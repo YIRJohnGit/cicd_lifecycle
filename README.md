@@ -295,7 +295,7 @@ helm plugin install https://github.com/datreeio/helm-datree
   - Go to Dashboard 
    - Go to Manage Jenkins
     - Go to Credentials, Select Global
-     - elect the Kind to <Secret Text>
+     - Select the Kind to <Secret Text>
 
   
 #### Setting SonarQube Environment on Jenkins Pipelines
