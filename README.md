@@ -189,7 +189,7 @@ networks:
 ```
 - Run the following command to run Docker Services in the file
 ```
-Run `docker-compose up -d --build`
+Run `docker-compose up --detech --build`
 ```
 - you'll have access to:
   - Jenkins at http://localhost:8080
