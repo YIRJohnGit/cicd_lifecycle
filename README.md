@@ -87,14 +87,14 @@
 
 
 ### Configuring Jenkins
-  - Update the Jenkisns to Latest by visiting the Jenkins Website https://updates.jenkins.io/download/war/
-  - cd Downloads && wget https://updates.jenkins.io/download/war/2.393/jenkins.war
-  - nohup java -jar jenkins.war &
-  - Visit using URL http://localhost:8080
-  - Username: y_ijohn
-  - Password: Divya@1234
-  - Full Name: Irudaya Raj John Y
-  - Email: y_ijohn@yahoo.com
+  - Update the Jenkisns to Latest by visiting the Jenkins Website `https://updates.jenkins.io/download/war/`
+  - `cd Downloads && wget https://updates.jenkins.io/download/war/2.393/jenkins.war`
+  - `nohup java -jar jenkins.war &`
+  - Visit using URL `http://localhost:8080`
+  - Username: `y_ijohn`
+  - Password: `Divya@1234`
+  - Full Name: `Irudaya Raj John Y`
+  - Email: `y_ijohn@yahoo.com`
 
 #### Downgrading Jenkns to 2.303.2
 ```
