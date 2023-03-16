@@ -338,8 +338,14 @@ helm plugin install https://github.com/datreeio/helm-datree
     https2 - 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
     https4 - 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
     https5 - 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
-  https7 - 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
+    https7 - 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
   ```
+  
+  ### Upading the Access Token in Jenkins
+  -Git Developer Access Token `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`
+
+  ![image](https://user-images.githubusercontent.com/111234771/225745651-8bd56598-fcc1-460c-a0d0-cbe90220c89f.png)
+
   <hr>
   
 #### Setting Up GitHub SSH Token
@@ -358,4 +364,3 @@ helm plugin install https://github.com/datreeio/helm-datree
       - cat ~/.ssh/id_ed25519
   ![image](https://user-images.githubusercontent.com/111234771/223159399-09bfbb81-e438-450a-851e-b490ed348265.png)
 
--Git Developer Access Token `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`
