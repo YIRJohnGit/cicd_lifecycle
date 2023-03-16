@@ -364,3 +364,5 @@ helm plugin install https://github.com/datreeio/helm-datree
       - cat ~/.ssh/id_ed25519
   ![image](https://user-images.githubusercontent.com/111234771/223159399-09bfbb81-e438-450a-851e-b490ed348265.png)
 
+_Below is the View to Add SSH Private Key in Jenkins_
+![image](https://user-images.githubusercontent.com/111234771/225747478-40002cf1-c47f-49aa-bac0-9a2570889f77.png)
