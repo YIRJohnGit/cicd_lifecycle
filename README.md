@@ -1,3 +1,59 @@
+# Seting Up ZSH Terminal Utiliry (Optional)
+
+- Github Link for More Detail `https://github.com/YIRJohnGit/ohmyzsh`
+- Github Link for Theme `https://github.com/ohmyzsh/ohmyzsh/wiki/Themes`
+```
+sudo apt install -y zsh
+```
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+- ... to Enable Plugin
+```
+vi ~/.zshrc
+```
+```
+plugins=(
+  git
+  bundler
+  dotenv
+  macos
+  rake
+  rbenv
+  ruby
+)
+```
+- ... to enable theme
+
+```
+ZSH_THEME="jonathan"
+```
+or
+```
+ZSH_THEME="random" 
+ZSH_THEME_RANDOM_CANDIDATES=(
+  "jonathan"
+  "rkj-repos"
+  "xiong-chiamiov"
+  "robbyrussell"
+  "agnoster"
+  "aussiegeek"
+  "candy"
+  "fox"
+)
+```
+...to Ignore the theme
+```
+ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
+```
+...to Uninstall
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+```
+<hr>
+
+
 # Setting Up CICD Life Cycle
 
 - You Tube Tutorials: https://youtu.be/adG0vq5boL8
