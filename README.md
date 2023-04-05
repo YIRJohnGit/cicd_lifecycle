@@ -412,12 +412,12 @@ helm plugin install https://github.com/datreeio/helm-datree
           - Tick -  user:email Access user email addresses (read-only)
           - Generte and Copy the token 
 ```
-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
+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
 ```
 	
   
   ### Upading the Access Token in Jenkins
-  -Git Developer Access Token `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`
+  -Git Developer Access Token `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`
 
   ![image](https://user-images.githubusercontent.com/111234771/225745651-8bd56598-fcc1-460c-a0d0-cbe90220c89f.png)
 
