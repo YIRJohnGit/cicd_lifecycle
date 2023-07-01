@@ -61,7 +61,8 @@ sudo apt install -y zsh-autosuggestions zsh-syntax-highlighting zsh
 cd ~/Downloads
 ```
 ```
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+sudo chown -R $USER:$USER $ZSH_CUSTOM/plugins
 ```
 ```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
