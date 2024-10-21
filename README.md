@@ -85,6 +85,17 @@ plugins=(
   
 <hr>
 
+## Verify Auto start
+- open the file `nano ~/.bashrc`
+```
+# Starting ZSH Automatically
+if [ -t 1 ]; then
+   exec zsh
+fi
+
+```
+- Restarting the bash profile `source ~/.bashrc`
+
 # Setting Up CICD Life Cycle
 
 - You Tube Tutorials: https://youtu.be/adG0vq5boL8
